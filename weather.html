@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+body {
+  background-color: powderblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-family: verdana;
+  font-size: 20px;
+  text-align: center;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+
+}
+.nav {
+  background-color: turquoise;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+
+}
+ul li a:hover{
+  background-color: white;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to Samina's weather forcast</h1>
+
+<ul class="nav">
+<li> <a href="Current Weather.html"> Current Weather </a> </li>
+<li> <a href="Forcast.html"> Forcast </a> </li>
+</ul>
+<div class = "container">
+  <div class = "row" style = "margin-bottom:20px;">
+  <h3 class =" text-center text-primary"> Enter Zip Code </h3>
+</div>
+
+<div class = "row form-group form-inline" id = "rowDiv">
+<input type =" text"name ="zipcode" id = "zipcode" class = "form-control" placeholder="Zip Code">
+ <button id = "submitWeather" class= "btn btn-primary"> Search Zip Code </button>
+ </div>
+ <div id = "show"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "weather.js"></script>
+
+<script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
+<script>
+window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];
+ window.myWidgetParam.push({id: 11,cityid: '2643743',appid: '39bea30870b7ea0f14619c1352a22a19',units: 'metric',containerid: 'openweathermap-widget-11',  });
+ (function() {
+ var script = document.createElement('script');
+ script.async = true;script.charset = "utf-8";
+ script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";
+
+ var s = document.getElementsByTagName('script')[0];
+ s.parentNode.insertBefore(script, s);
+  })();
+</script>
+</body>
+</html>
+
+
+
+</body>
+</html>
